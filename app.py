@@ -7,6 +7,7 @@ def hello():
 
 @app.route("/about")
 def about():
+    """Returns information about the Flask application."""
     return jsonify({
         "app_name": "Flask Docker App",
         "version": "1.0.0",
